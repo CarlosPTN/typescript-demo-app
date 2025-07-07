@@ -29,3 +29,17 @@ let user: {
         id: 5
     }
 }
+let val: {}= 'some text'; // using as a type this doesnt mean it 
+// is an object it means it cant be null, any non null value 
+// (not "null" or "undefined");
+const someObj = {}; //this is a value
+
+//Record type is provided by typescript, it lets as dinamically in 
+// case we dont know what are the property names for example this way 
+// it is possible to type them (both the keys and values)
+let data : Record<string, number | string>;
+//the keys are in fact strings
+data= {
+    entry1: 1,
+    1: 'some string'
+};
